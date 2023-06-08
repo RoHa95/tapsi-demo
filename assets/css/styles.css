@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
+}
+
+:root {
+  --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
+  --color-secendary-light: #fff6f2;
+  --color-secendart-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-heading: #000;
+  --color-body: #333;
+  --color-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* buttons */
+.btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn--secendary {
+  background-color: var(--color-secendart-dark);
+  color: var(--color-white);
+}
+.btn-block {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+  .btn-block {
+    font-size: 2rem;
+  }
+}
+
+/* bridg */
+.badge {
+  display: inline-block;
+  border-radius: 32px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  /* font-weight: 700; */
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secendary {
+  background-color: var(--color-white);
+  color: #ff5722;
+  border: 2px solid var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.4rem;
+  }
+}
+
+/* list */
+
+.list {
+  list-style: none;
+  font-size: 1.6rem;
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.list--tick .list__item {
+  background: url(/assets/images/tik-squere.svg) no-repeat;
+  background-position: right center;
+  padding-right: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* plan */
+
+.block-plan {
+  display: grid;
+  gap: 3rem 4rem;
+  margin-top: 5rem;
+  grid-template-columns: repeat(auto-fit, minMax(300px, 1fr));
+}
+.plan {
+  max-width: 400px;
+  font-size: 1.8rem;
+  transition: all 0.2 ease-out;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: var(--color-white);
+  overflow: hidden;
+  box-shadow: 0 0 20px 10px #efefef;
+}
+
+.card__header,
+.card__body {
+  padding: 3rem 2.5rem;
+}
+.card__header {
+  color: var(--color-white);
+}
+.card__secondary .card__header {
+  background-color: var(--color-secendart-dark);
+}
+.card__primary .card__header {
+  background-color: var(--color-primary-light);
+}
+.plan__intruction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.plan__price {
+  font-size: 3rem;
+}
+.plan__billing-cicle {
+  font-size: 1.4rem;
+}
+.plan__description {
+  margin-top: 1.5rem;
+  display: block;
+}
+.plan .btn-block {
+  margin-top: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan--popular:hover {
+    transform: scale(1.15) !important;
+  }
+  .plan:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* container */
+.container {
+  max-width: 1024px;
+  margin: 7rem auto;
+}
