@@ -225,8 +225,6 @@ h2 {
 .feature__image {
   margin-bottom: 2.5rem;
 }
-.feature__detailes {
-}
 
 @media screen and (min-width: 1024px) {
   .feature {
@@ -721,7 +719,28 @@ textarea {
 .services .feature__image {
   display: none;
 }
-
+.tab-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-content .feature__detailes {
+  width: 100%;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab.active {
+  opacity: 1;
+}
+.services .feature {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .services-tabs a > p {
     margin-top: 1rem;
@@ -736,5 +755,8 @@ textarea {
   }
   .services .feature__image {
     display: block;
+  }
+  .tab-content .feature__detailes {
+    width: 50%;
   }
 }
