@@ -1,9 +1,9 @@
-// const toggler = document.querySelector(".nav__toggler");
-// const navbar = document.querySelector(".nav");
-// toggler.addEventListener("click", (e) => {
-//   console.log("clicked");
-//   navbar.classList.toggle("nav__expanded");
-// });
+const toggler = document.querySelector(".nav__toggler");
+const navbar = document.querySelector(".nav");
+toggler.addEventListener("click", (e) => {
+  console.log("clicked");
+  navbar.classList.toggle("nav__expanded");
+});
 
 //tab
 const tabs = document.querySelectorAll(".tab");
